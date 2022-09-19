@@ -21,7 +21,7 @@ import static org.testng.Assert.assertEquals;
             System.out.println("Opening Appium Server");
         }
         @Test (priority = 2)
-        public <val1>void Minusnumbers() {
+        public <val1>void minusNumbers() {
             driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"4\"]")).click();
             driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"minus\"]")).click();
             driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"3\"]")).click();
@@ -30,7 +30,7 @@ import static org.testng.Assert.assertEquals;
             driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"clear\"]")).click();
         }
         @Test (priority = 3)
-        public <val3> void Multiplynumbers() {
+        public <val3> void multiplyNumbers() {
             driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"4\"]")).click();
             driver.findElement(By.id("com.google.android.calculator:id/op_mul")).click();
             driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"3\"]")).click();
